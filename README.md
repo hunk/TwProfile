@@ -1,7 +1,7 @@
 TwProfile
 =========
 
-Demo of effect of tweetbot profile image using a UITableView.
+Demo of effect of tweetbot profile image using a (UITableView || UIScrollView).
 
 ## Images
 
