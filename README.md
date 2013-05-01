@@ -3,12 +3,10 @@ TwProfile
 
 Demo of effect of tweetbot profile image using a (UITableView || UIScrollView).
 
-## Images
+## Demo
 
-<img src="screenshots/screenshot1.png" height="240px" width="160px" />
-<img src="screenshots/screenshot2.png" height="240px" width="160px" />
-<img src="screenshots/screenshot3.png" height="240px" width="160px" />
-<img src="screenshots/screenshot4.png" height="240px" width="160px" />
+![Alt text](screenshots/effect_tweetbot.gif)
+
 
 ## Video
 
