@@ -5,7 +5,7 @@ Demo of effect of tweetbot profile image using a (UITableView || UIScrollView).
 
 ## Demo
 
-![Alt text](screenshots/effect_tweetbot.gif)
+![Alt text](https://raw.github.com/hunk/MediaDemo/master/TwProfile/effect_tweetbot.gif)
 
 
 ## Video
