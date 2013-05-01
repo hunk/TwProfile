@@ -8,8 +8,8 @@
 
 #import "ProfileViewController.h"
 
-CGFloat ImageHeight  = 150.0;
-CGFloat ImageWidth  = 320.0;
+static CGFloat ImageHeight  = 150.0;
+static CGFloat ImageWidth  = 320.0;
 
 @interface ProfileViewController ()
 
@@ -100,13 +100,15 @@ CGFloat ImageWidth  = 320.0;
 		self.imgProfile.frame             = CGRectMake(0, 0, ImageWidth, ImageHeight);
         
         self.tableView = [[UITableView alloc] init];
-		self.tableView.dataSource                   = self;
-		self.tableView.delegate                     = self;
-		self.tableView.separatorStyle               = UITableViewCellSeparatorStyleNone;
-        self.tableView.backgroundColor              = [UIColor clearColor];
+		self.tableView.dataSource = self;
+		self.tableView.delegate = self;
+		self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        self.tableView.backgroundColor = [UIColor clearColor];
 
         [self.view addSubview:self.imgProfile];
         [self.view addSubview:self.tableView];
+        
+        self.title = @"with UITableView";
     }
     return self;
 }

@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class ProfileViewController;
+@class DemoViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ProfileViewController *profileVC;
+@property (strong, nonatomic) DemoViewController *demoVC;
 
 @end

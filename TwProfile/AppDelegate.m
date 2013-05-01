@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import "ProfileViewController.h"
+#import "DemoViewController.h"
 
 @implementation AppDelegate
 
@@ -16,8 +16,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-	self.profileVC = [[ProfileViewController alloc] init];
-	self.window.rootViewController = self.profileVC;
+    self.demoVC = [[DemoViewController alloc] init];
+    UINavigationController *navC = [[UINavigationController alloc] initWithRootViewController:self.demoVC];
+	self.window.rootViewController = navC;
     [self.window makeKeyAndVisible];
     return YES;
 }
