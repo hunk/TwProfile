@@ -1,7 +1,7 @@
 TwProfile
 =========
 
-Demo of effect of tweetbot profile image using a UITableView.
+Demo of effect of tweetbot profile image using a (UITableView || UIScrollView).
 
 ## Images
 
@@ -10,7 +10,11 @@ Demo of effect of tweetbot profile image using a UITableView.
 <img src="screenshots/screenshot3.png" height="240px" width="160px" />
 <img src="screenshots/screenshot4.png" height="240px" width="160px" />
 
-[Video](http://www.youtube.com/watch?v=2t5w4kpU5ek)
+## Video
+
+[Using UItableView](http://www.youtube.com/watch?v=2t5w4kpU5ek)
+
+[Using UIScrollView](http://www.youtube.com/watch?v=v41pLwJJ92I)
 
 ### The MIT License (MIT)
 
