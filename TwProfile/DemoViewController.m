@@ -9,6 +9,8 @@
 #import "DemoViewController.h"
 #import "ProfileViewController.h"
 #import "ProfileScrollViewController.h"
+#import "ProfileImagesViewController.h"
+#import "ProfileImagesScrollViewController.h"
 
 @interface DemoViewController ()
 
@@ -54,7 +56,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 2;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -69,8 +71,12 @@
     // Configure the cell...
     if (indexPath.row == 0) {
         cell.textLabel.text = @"TwProfile with UITableView";
-    }else{
+    }else if(indexPath.row == 1){
         cell.textLabel.text = @"TwProfile with UIScrollView";
+    }else if(indexPath.row == 2){
+        cell.textLabel.text = @"TwProfile img+ with UIScrollView";
+    }else{
+        cell.textLabel.text = @"TwProfile img+ with UIScrollView";
     }
     
     return cell;
@@ -122,9 +128,15 @@
     if (indexPath.row == 0) {
         ProfileViewController *profileVC = [[ProfileViewController alloc] init];
         [self.navigationController pushViewController:profileVC animated:YES];
-    }else{
+    }else if(indexPath.row == 1){
         ProfileScrollViewController *profileScroll = [[ProfileScrollViewController alloc] init];
         [self.navigationController pushViewController:profileScroll animated:YES];
+    }else if(indexPath.row == 2){
+        ProfileImagesViewController *proImgs = [[ProfileImagesViewController alloc] init];
+        [self.navigationController pushViewController:proImgs animated:YES];
+    }else{
+        ProfileImagesScrollViewController *proImgsSc = [[ProfileImagesScrollViewController alloc] init];
+        [self.navigationController pushViewController:proImgsSc animated:YES];
     }
 }
 
